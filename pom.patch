@@ -1,0 +1,18 @@
+--- pom.xml	2010-05-25 21:21:07.000000000 +0200
++++ pom.xml	2012-02-21 14:28:35.364369751 +0100
+@@ -222,15 +222,10 @@
+       <artifactId>maven-scm-provider-cvsexe</artifactId>
+       <version>${maven-scm.version}</version>
+     </dependency>
+     <dependency>
+       <groupId>org.apache.maven.scm</groupId>
+-      <artifactId>maven-scm-provider-cvsjava</artifactId>
+-      <version>${maven-scm.version}</version>
+-    </dependency>
+-    <dependency>
+-      <groupId>org.apache.maven.scm</groupId>
+       <artifactId>maven-scm-provider-local</artifactId>
+       <version>${maven-scm.version}</version>
+     </dependency>
+     <dependency>
+       <groupId>org.apache.maven.scm</groupId>

@@ -1,0 +1,12 @@
+diff -r 702e2ba1693d maven-changelog-plugin-2.2/src/main/java/org/apache/maven/plugin/changelog/ChangeLog.java
+--- a/maven-changelog-plugin-2.2/src/main/java/org/apache/maven/plugin/changelog/ChangeLog.java	Tue Feb 21 14:37:24 2012 +0100
++++ b/maven-changelog-plugin-2.2/src/main/java/org/apache/maven/plugin/changelog/ChangeLog.java	Tue Feb 21 14:43:27 2012 +0100
+@@ -43,7 +43,7 @@
+  * @author <a href="mailto:dion@multitask.com.au">dIon Gillard</a>
+  * @author <a href="mailto:bodewig@apache.org">Stefan Bodewig</a>
+  * @author <a href="mailto:peter@apache.org">Peter Donald</a>
+- * @version $Id:ChangeLog.java 437762 2006-08-28 19:29:49 +0200 (må, 28 aug 2006) dennisl $
++ * @version $Id:ChangeLog.java 437762 2006-08-28 19:29:49 +0200 (m\u00E0, 28 aug 2006) dennisl $
+  */
+ public class ChangeLog
+ {
