@@ -1,9 +1,9 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           maven-changelog-plugin
 Version:        2.2
-Release:        17.0%{?dist}
+Release:        18.1
 Summary:        Produce SCM changelog reports
-
+Group:		Development/Java
 
 License:        ASL 2.0
 URL:            http://maven.apache.org/plugins/maven-changelog-plugin/
@@ -64,32 +64,14 @@ API documentation for %{name}.
 cp -p %{SOURCE1} .
 
 %build
-mvn-rpmbuild \
-        -Dmaven.test.skip=true \
-        install javadoc:javadoc
+%mvn_build -f
 
 %install
-# jars
-install -d -m 0755 %{buildroot}%{_javadir}
-install -m 644 target/%{name}-%{version}.jar   %{buildroot}%{_javadir}/%{name}.jar
+%mvn_install
 
-
-# poms
-install -d -m 755 %{buildroot}%{_mavenpomdir}
-install -pm 644 pom.xml \
-    %{buildroot}%{_mavenpomdir}/JPP-%{name}.pom
-
-%add_maven_depmap JPP-%{name}.pom %{name}.jar
-
-# javadoc
-install -d -m 0755 %{buildroot}%{_javadocdir}/%{name}
-cp -pr target/site/api*/* %{buildroot}%{_javadocdir}/%{name}/
-
-%files
+%files -f .mfiles
 %doc LICENSE-2.0.txt
 %{_javadir}/*
-%{_mavenpomdir}/*
-%{_mavendepmapfragdir}/*
 
 %files javadoc
 %doc LICENSE-2.0.txt
