@@ -1,7 +1,7 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           maven-changelog-plugin
 Version:        2.2
-Release:        18.1
+Release:        18.2
 Summary:        Produce SCM changelog reports
 Group:		Development/Java
 
