@@ -6,7 +6,7 @@ Summary:        Produce SCM changelog reports
 Group:		Development/Java
 
 License:        ASL 2.0
-URL:            http://maven.apache.org/plugins/maven-changelog-plugin/
+URL:            https://maven.apache.org/plugins/maven-changelog-plugin/
 #svn export http://svn.apache.org/repos/asf/maven/plugins/tags/maven-changelog-plugin-2.2/
 #tar jcf maven-changelog-plugin-2.2.tar.bz2 maven-changelog-plugin-2.2/
 Source0:        %{name}-%{version}.tar.bz2
